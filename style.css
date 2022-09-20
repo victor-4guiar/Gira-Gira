@@ -16,6 +16,25 @@ body{
 	border-radius: 50%;
 	margin: 2em auto;
 	display: flex;
+	align-items: center;
+}
+
+.updown{
+	animation: updown 2s infinite ease-in-out;
+}
+
+@keyframes updown{
+	0%{
+		margin-top: 2em;
+	}
+	
+	50%{
+		margin-top: 4em;
+	}
+	
+	100%{
+		margin-top: 2em;
+	}
 }
 
 .helice_container{
@@ -25,11 +44,40 @@ body{
 	margin: auto;
 }
 
+.row{
+	animation: row 1s infinite linear;
+}
+
+@keyframes row{
+	from{
+		transform: rotate(0deg);
+	}
+	
+	to{
+		transform: rotate(360deg);
+	}
+}
+
 .square{
 	background-color: #444;
 	width: 30px;
 	height: 30px;
 	margin: .5;
 	border-radius: 5px;
-	margin: .5em;
+	margin: .3em;
+}
+
+.neko{
+	width: 200px;
+	height: 200px;
+	display: flex;
+	margin: 200px auto;
+}
+
+.aprox{
+	animation: aprox 2s linear;
+}
+
+@keyframes aprox{
+	from{opacity: 0%; width: 200px; height: 200px;} to {opacity: 100%; width: 250px; height: 250px;}
 }
